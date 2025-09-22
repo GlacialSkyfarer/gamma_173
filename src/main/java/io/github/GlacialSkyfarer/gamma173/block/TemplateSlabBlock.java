@@ -4,6 +4,7 @@ import io.github.GlacialSkyfarer.gamma173.Util;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.hit.HitResult;
@@ -21,6 +22,7 @@ import net.modificationstation.stationapi.api.util.StringIdentifiable;
 import net.modificationstation.stationapi.api.util.math.Direction;
 
 import java.util.List;
+import java.util.random.RandomGenerator;
 
 import static io.github.GlacialSkyfarer.gamma173.Gamma173.NAMESPACE;
 
@@ -28,8 +30,17 @@ public class TemplateSlabBlock extends TemplateBlock {
 
     public static final EnumProperty<SlabType> TYPE = EnumProperty.of("type", SlabType.class);
 
+    private int doubleSlabId = 0;
+
     public TemplateSlabBlock(Identifier identifier, Material material) {
         super(identifier, material);
+    }
+
+    public TemplateSlabBlock setDoubleSlabId(int id) {
+
+        this.doubleSlabId = id;
+        return this;
+
     }
 
     @Override
@@ -102,49 +113,59 @@ public class TemplateSlabBlock extends TemplateBlock {
     }
 
     @Override
-    public void onBlockPlaced(World world, int x, int y, int z, BlockState replacedState) {
-        super.onBlockPlaced(world, x, y, z, replacedState);
+    public boolean onUse(World world, int x, int y, int z, PlayerEntity player) {
+        int side = player.raycast(5.0,1).side;
+        NAMESPACE.getLogger().info(side);
+        //NOT up or down
+        if (side > 1) {
+            return super.onUse(world,x,y,z,player);
+        }
+        ItemStack hand = player.getHand();
+        if (hand == null || hand.itemId != this.asItem().id) return super.onUse(world,x,y,z,player);
+        if (side == 1) {
+
+            BlockState state = world.getBlockState(x,y,z);
+            if (state.get(TYPE) == SlabType.BOTTOM) {
+
+                world.setBlock(x,y,z,doubleSlabId);
+                hand.count -= 1;
+                world.playSound(x,y,z, WOOD_SOUND_GROUP.getSound(),1, 1f + world.random.nextFloat()/2f);
+                //world.setBlockState(x, y - 1, z, state.with(TYPE, SlabType.DOUBLE));
+                return true;
+
+            } else {
+
+                return super.onUse(world,x,y,z,player);
+
+            }
+
+        }
+
+        if (side == 0) {
+
+            BlockState state = world.getBlockState(x,y,z);
+            if (state.get(TYPE) == SlabType.TOP) {
+
+                world.setBlock(x,y,z,doubleSlabId);
+                hand.count -= 1;
+                world.playSound(x,y,z, WOOD_SOUND_GROUP.getSound(),1, 1f + world.random.nextFloat()/2f);
+                //world.setBlockState(x, y + 1, z, state.with(TYPE, SlabType.DOUBLE));
+                return true;
+
+            } else {
+
+                return super.onUse(world,x,y,z,player);
+
+            }
+
+        }
+
+        return super.onUse(world,x,y,z,player);
     }
 
     @Override
     public void onPlaced(World world, int x, int y, int z, LivingEntity placer) {
-        int side = placer.raycast(5.0,1).side;
-        NAMESPACE.getLogger().info(side);
-        //NOT up or down
-        if (side > 1) {
-            super.onPlaced(world, x, y, z, placer);
-            return;
-        }
 
-        if (side == 1 && world.getBlockId(x,y-1,z) == this.id) {
-
-            BlockState state = world.getBlockState(x,y-1,z);
-            if (state.get(TYPE) == SlabType.BOTTOM) {
-
-                world.setBlockState(x, y - 1, z, state.with(TYPE, SlabType.DOUBLE));
-
-            } else {
-
-                super.onPlaced(world,x,y,z,placer);
-
-            }
-
-        }
-
-        if (side == 0 && world.getBlockId(x,y+1,z) == this.id) {
-
-            BlockState state = world.getBlockState(x,y+1,z);
-            if (state.get(TYPE) == SlabType.TOP) {
-
-                world.setBlockState(x, y + 1, z, state.with(TYPE, SlabType.DOUBLE));
-
-            } else {
-
-                super.onPlaced(world,x,y,z,placer);
-
-            }
-
-        }
 
     }
 

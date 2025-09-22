@@ -1,6 +1,7 @@
 package io.github.GlacialSkyfarer.gamma173.events.init;
 
 import io.github.GlacialSkyfarer.gamma173.block.TemplateDoorBlock;
+import io.github.GlacialSkyfarer.gamma173.block.TemplateDoubleSlabBlock;
 import io.github.GlacialSkyfarer.gamma173.block.TemplateSlabBlock;
 import io.github.GlacialSkyfarer.gamma173.block.TemplateTrapdoorBlock;
 import net.mine_diver.unsafeevents.listener.EventListener;
@@ -18,6 +19,7 @@ public class BlockListener {
     public static Block ReefwoodDoor;
     public static Block ReefwoodTrapdoor;
     public static Block ReefwoodSlab;
+    public static Block ReefwoodDoubleSlab;
 
     @EventListener
     public static void registerBlocks(BlockRegistryEvent event) {
@@ -45,5 +47,12 @@ public class BlockListener {
                 .setTranslationKey(NAMESPACE.id("reefwood_slab"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(2.0f);
+        ReefwoodDoubleSlab = new TemplateDoubleSlabBlock(NAMESPACE.id("reefwood_double_slab"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("reefwood_double_slab"))
+                .setSoundGroup(Block.WOOD_SOUND_GROUP)
+                .setHardness(2.0f)
+                .disableAutoItemRegistration()
+                .disableTrackingStatistics();
+        ((TemplateSlabBlock)ReefwoodSlab).setDoubleSlabId(ReefwoodDoubleSlab.id);
     }
 }

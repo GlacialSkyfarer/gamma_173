@@ -4,3 +4,6 @@ tile.@.reefwood_planks.name=Reefwood Planks
 tile.@.reefwood_door.name=Reefwood Door
 tile.@.reefwood_trapdoor.name=Reefwood Trapdoor
 tile.@.reefwood_slab.name=Reefwood Slab
+tile.@.reefwood_double_slab.name=Reefwood Double Slab
+
+tile.minecraft.wood_slab.name=Petrified Oak Slab
