@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "P": {
+        "item": "gamma173:reefwood_planks"
+      }
+
+  },
+  "pattern": [
+      "PP",
+      "PP",
+      "PP"
+  ],
+  "result": {
+    "item": "gamma173:reefwood_door",
+    "count": 1
+  }
+}
