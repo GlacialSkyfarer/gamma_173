@@ -1,6 +1,8 @@
 package io.github.GlacialSkyfarer.gamma173.events.init;
 
 import io.github.GlacialSkyfarer.gamma173.block.TemplateDoorBlock;
+import io.github.GlacialSkyfarer.gamma173.block.TemplateSlabBlock;
+import io.github.GlacialSkyfarer.gamma173.block.TemplateTrapdoorBlock;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,6 +16,8 @@ public class BlockListener {
     public static Block ReefwoodLog;
     public static Block ReefwoodPlanks;
     public static Block ReefwoodDoor;
+    public static Block ReefwoodTrapdoor;
+    public static Block ReefwoodSlab;
 
     @EventListener
     public static void registerBlocks(BlockRegistryEvent event) {
@@ -28,10 +32,18 @@ public class BlockListener {
                 .setHardness(2.0f)
                 .setResistance(5.0f);
         ReefwoodDoor = new TemplateDoorBlock(NAMESPACE.id("reefwood_door"), Material.WOOD)
-                .setTranslationKey("reefwood_door")
+                .setTranslationKey(NAMESPACE.id("reefwood_door"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(3.0f)
                 .disableTrackingStatistics();
-
+        ReefwoodTrapdoor = new TemplateTrapdoorBlock(NAMESPACE.id("reefwood_trapdoor"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("reefwood_trapdoor"))
+                .setSoundGroup(Block.WOOD_SOUND_GROUP)
+                .setHardness(3.0f)
+                .disableTrackingStatistics();
+        ReefwoodSlab = new TemplateSlabBlock(NAMESPACE.id("reefwood_slab"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("reefwood_slab"))
+                .setSoundGroup(Block.WOOD_SOUND_GROUP)
+                .setHardness(2.0f);
     }
 }

@@ -1,5 +1,5 @@
 {
-  "parent": "gamma173:block/doors/door_bottom_rh",
+  "parent": "gamma173:block/door/door_bottom",
   "textures": {
     "bottom": "gamma173:block/reefwood_door_bottom"
   }

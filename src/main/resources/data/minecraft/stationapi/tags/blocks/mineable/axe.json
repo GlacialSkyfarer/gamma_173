@@ -3,7 +3,9 @@
 
     "gamma173:reefwood_log",
     "gamma173:reefwood_planks",
-    "gamma173:reefwood_door"
+    "gamma173:reefwood_door",
+    "gamma173:reefwood_trapdoor",
+    "gamma173:reefwood_slab"
 
   ]
 }

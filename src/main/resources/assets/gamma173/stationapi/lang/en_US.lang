@@ -1,4 +1,6 @@
 # @ is a shorthand for the current mod id, which is gamma173. E.g: tile.@.redclay.name
-tile.@.reefwood_log.name=Reefwood Log
+tile.@.reefwood_log.name=Reefwood Stem
 tile.@.reefwood_planks.name=Reefwood Planks
-tile.reefwood_door.name=Reefwood Door
+tile.@.reefwood_door.name=Reefwood Door
+tile.@.reefwood_trapdoor.name=Reefwood Trapdoor
+tile.@.reefwood_slab.name=Reefwood Slab
