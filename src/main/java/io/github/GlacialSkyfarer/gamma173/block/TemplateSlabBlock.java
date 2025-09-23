@@ -30,17 +30,8 @@ public class TemplateSlabBlock extends TemplateBlock {
 
     public static final EnumProperty<SlabType> TYPE = EnumProperty.of("type", SlabType.class);
 
-    private int doubleSlabId = 0;
-
     public TemplateSlabBlock(Identifier identifier, Material material) {
         super(identifier, material);
-    }
-
-    public TemplateSlabBlock setDoubleSlabId(int id) {
-
-        this.doubleSlabId = id;
-        return this;
-
     }
 
     @Override
@@ -86,11 +77,10 @@ public class TemplateSlabBlock extends TemplateBlock {
 
     @Override
     public List<ItemStack> getDropList(World world, int x, int y, int z, BlockState state, int meta) {
-        if (world.getBlockId(x,y,z) != this.id) return null;
-        if (world.getBlockState(x,y,z).get(TYPE) == SlabType.DOUBLE) {
+        if (state.isAir()) return null;
+        if (state.get(TYPE) == SlabType.DOUBLE) {
             return  List.of(new ItemStack(asItem()), new ItemStack(asItem()));
         }
-
         return super.getDropList(world, x, y, z, state, meta);
     }
 
@@ -127,10 +117,9 @@ public class TemplateSlabBlock extends TemplateBlock {
             BlockState state = world.getBlockState(x,y,z);
             if (state.get(TYPE) == SlabType.BOTTOM) {
 
-                world.setBlock(x,y,z,doubleSlabId);
                 hand.count -= 1;
                 world.playSound(x,y,z, WOOD_SOUND_GROUP.getSound(),1, 1f + world.random.nextFloat()/2f);
-                //world.setBlockState(x, y - 1, z, state.with(TYPE, SlabType.DOUBLE));
+                world.setBlockStateWithNotify(x, y, z, state.with(TYPE, SlabType.DOUBLE));
                 return true;
 
             } else {
@@ -146,10 +135,9 @@ public class TemplateSlabBlock extends TemplateBlock {
             BlockState state = world.getBlockState(x,y,z);
             if (state.get(TYPE) == SlabType.TOP) {
 
-                world.setBlock(x,y,z,doubleSlabId);
                 hand.count -= 1;
                 world.playSound(x,y,z, WOOD_SOUND_GROUP.getSound(),1, 1f + world.random.nextFloat()/2f);
-                //world.setBlockState(x, y + 1, z, state.with(TYPE, SlabType.DOUBLE));
+                world.setBlockStateWithNotify(x, y, z, state.with(TYPE, SlabType.DOUBLE));
                 return true;
 
             } else {
