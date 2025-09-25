@@ -18,7 +18,7 @@ import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
 import net.modificationstation.stationapi.api.util.math.Direction;
 
-public class TemplateDoorBlock extends TemplateBlock {
+public class TemplateDoorBlock extends TemplateBlockWithLootTable {
 
     public static final BooleanProperty TOP = BooleanProperty.of("top");
     public static final DirectionProperty FACING = DirectionProperty.of("facing", Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST);
@@ -173,11 +173,6 @@ public class TemplateDoorBlock extends TemplateBlock {
 
         }
 
-    }
-
-    @Override
-    public boolean canEmitRedstonePower() {
-        return false;
     }
 
     @Override

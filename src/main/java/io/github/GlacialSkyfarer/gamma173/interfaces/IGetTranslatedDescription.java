@@ -1,4 +1,4 @@
-package io.github.GlacialSkyfarer.gamma173;
+package io.github.GlacialSkyfarer.gamma173.interfaces;
 
 import net.minecraft.client.resource.language.I18n;
 

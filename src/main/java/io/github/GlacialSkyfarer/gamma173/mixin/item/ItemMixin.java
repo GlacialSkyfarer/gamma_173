@@ -1,7 +1,7 @@
-package io.github.GlacialSkyfarer.gamma173.mixin;
+package io.github.GlacialSkyfarer.gamma173.mixin.item;
 
 import com.llamalad7.mixinextras.lib.apache.commons.ArrayUtils;
-import io.github.GlacialSkyfarer.gamma173.IGetTranslatedDescription;
+import io.github.GlacialSkyfarer.gamma173.interfaces.IGetTranslatedDescription;
 import io.github.GlacialSkyfarer.gamma173.Util;
 import net.glasslauncher.mods.alwaysmoreitems.gui.AMITextRenderer;
 import net.minecraft.client.resource.language.I18n;

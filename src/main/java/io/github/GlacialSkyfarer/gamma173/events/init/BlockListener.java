@@ -1,5 +1,6 @@
 package io.github.GlacialSkyfarer.gamma173.events.init;
 
+import io.github.GlacialSkyfarer.gamma173.block.TemplateBlockWithLootTable;
 import io.github.GlacialSkyfarer.gamma173.block.TemplateDoorBlock;
 import io.github.GlacialSkyfarer.gamma173.block.TemplateSlabBlock;
 import io.github.GlacialSkyfarer.gamma173.block.TemplateTrapdoorBlock;
@@ -13,37 +14,33 @@ import static io.github.GlacialSkyfarer.gamma173.Gamma173.NAMESPACE;
 
 public class BlockListener {
 
-    public static Block ReefwoodLog;
-    public static Block ReefwoodPlanks;
-    public static Block ReefwoodDoor;
-    public static Block ReefwoodTrapdoor;
-    public static Block ReefwoodSlab;
+    //Vanilla replacements
+    public static Block OakLog;
+    public static Block OakDoor;
+    public static Block OakTrapdoor;
+    public static Block OakSlab;
 
     @EventListener
     public static void registerBlocks(BlockRegistryEvent event) {
 
-        ReefwoodLog = new TemplateBlock(NAMESPACE.id("reefwood_log"), Material.WOOD)
-                .setTranslationKey(NAMESPACE.id("reefwood_log"))
+        //Vanilla replacements
+        OakLog = new TemplateBlock(NAMESPACE.id("oak_log"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("oak_log"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(2.0f);
-        ReefwoodPlanks = new TemplateBlock(NAMESPACE.id("reefwood_planks"), Material.WOOD)
-                .setTranslationKey(NAMESPACE.id("reefwood_planks"))
-                .setSoundGroup(Block.WOOD_SOUND_GROUP)
-                .setHardness(2.0f)
-                .setResistance(5.0f);
-        ReefwoodDoor = new TemplateDoorBlock(NAMESPACE.id("reefwood_door"), Material.WOOD)
-                .setTranslationKey(NAMESPACE.id("reefwood_door"))
+        OakDoor = new TemplateDoorBlock(NAMESPACE.id("oak_door"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("oak_door"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(3.0f)
                 .disableTrackingStatistics();
-        ReefwoodTrapdoor = new TemplateTrapdoorBlock(NAMESPACE.id("reefwood_trapdoor"), Material.WOOD)
-                .setTranslationKey(NAMESPACE.id("reefwood_trapdoor"))
+        OakTrapdoor = new TemplateTrapdoorBlock(NAMESPACE.id("oak_trapdoor"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("oak_trapdoor"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
-                .setHardness(3.0f)
-                .disableTrackingStatistics();
-        ReefwoodSlab = new TemplateSlabBlock(NAMESPACE.id("reefwood_slab"), Material.WOOD)
-                .setTranslationKey(NAMESPACE.id("reefwood_slab"))
+                .setHardness(3.0f);
+        OakSlab = new TemplateSlabBlock(NAMESPACE.id("oak_slab"), Material.WOOD)
+                .setTranslationKey(NAMESPACE.id("oak_slab"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(2.0f);
+
     }
 }

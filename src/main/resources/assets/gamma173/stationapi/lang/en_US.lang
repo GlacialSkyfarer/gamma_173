@@ -5,18 +5,18 @@ tile.@.reefwood_log.desc=A sturdy chunk of stem.\nThough it mimics coral,\nit is
 tile.@.reefwood_planks.name=Reefwood Planks
 tile.@.reefwood_planks.desc=Planks fashioned from reefwood.\nSlightly slippery.
 tile.@.reefwood_door.name=Reefwood Door
-tile.@.reefwood_door.desc=A sturdy door built from reefwood.\nA solid defense against the outside world.
+tile.@.reefwood_door.desc=A sturdy door built from reefwood.\nFeatures a face to scare off monsters.*\n*Effectiveness may vary.
 tile.@.reefwood_trapdoor.name=Reefwood Trapdoor
 tile.@.reefwood_trapdoor.desc=A trapdoor built from reefwood.\nGood for hiding away secrets.
 tile.@.reefwood_slab.name=Reefwood Slab
 tile.@.reefwood_slab.desc=A half-step fashioned from reefwood planks.
-tile.@.reefwood_double_slab.name=Reefwood Double Slab
 
 # Vanilla changes
 tile.stone.desc=A block of hard stone.\nRock and stone!
 tile.grass.desc=A block of soft soil,\ntopped with a layer of grass.
 tile.dirt.desc=A block of soft soil.
 tile.stonebrick.desc=Many small stones, cobbled together.
+tile.wood.name=Oak Planks
 tile.wood.desc=Planks fashioned from oak wood.\nSmells nice.
 #Saplings TODO
 tile.sapling.name=Dry Sapling
@@ -28,6 +28,8 @@ tile.oreGold.desc=Shimmering chunks of gold\nembedded in stone.
 tile.oreIron.desc=Gleaming chunks of iron\nembedded in stone.
 tile.oreCoal.desc=Dark chunks of coal\nembedded in stone.
 #Logs TODO
+tile.@.oak_log.name=Oak Log
+tile.@.oak_log.desc=A stump of wood from an oak tree.\nStands tall, no matter what.
 tile.log.name=Driftwood
 tile.log.desc=An old log from a time gone by.\nUnobtainable in normal gameplay.
 #Leaves TODO
@@ -91,6 +93,8 @@ tile.mushroom.desc=A mushroom decayed with time.
 tile.blockGold.desc=A shiny block of pure gold.\nIt glimmers and shimmers and shines...
 tile.blockIron.desc=A sturdy block of pure iron.\nHeavy metal!
 tile.stoneSlab.name=Solidified Stone Double Slab
+tile.@.oak_slab.name=Oak Slab
+tile.@.oak_slab.desc=A half step fashioned from oak planks.
 tile.stoneSlab.wood.name=Petrified Oak Slab
 tile.stoneSlab.stone.name=Solidified Stone Slab
 tile.stoneSlab.cobble.name=Condensed Cobblestone Slab
@@ -132,6 +136,11 @@ tile.pumpkin.desc=A carved pumpkin.\nGuess I'll OOGLY GOO!
 tile.hellrock.desc=Packed igneous rock.\nBurns eternally.
 tile.hellsand.desc=Haunted sand that clings to\nwhatever steps on it.\nIt yearns for freedom.
 tile.lightgem.desc=Shining crystals from the Nether.\nMesmerizing...
-tile.pumpkinlit.desc=A carved pumpkin with a torch inside.\nSpooky!
+tile.litpumpkin.desc=A carved pumpkin with a torch inside.\nSpooky!
 tile.trapdoor.name=Petrified Oak Trapdoor
 tile.trapdoor.desc=A broken hatch from a time gone by.\nUnobtainable in normal gameplay.
+tile.@.oak_trapdoor.name=Oak Trapdoor
+tile.@.oak_trapdoor.desc=A hatch fashioned from oak.\nIt's this lever, right?
+
+tile.@.oak_door.name=Oak Door
+tile.@.oak_door.desc=A sturdy door built from oak.\nA solid defense against the outside world.

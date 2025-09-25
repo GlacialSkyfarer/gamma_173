@@ -5,12 +5,13 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "ExampleMixin",
-    "ItemMixin"
+    "block.BlockMixin",
+    "feature.OakTreeFeatureMixin",
+    "item.ItemMixin"
   ],
   "server": [
   ],
   "client": [
-    "TitleScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1

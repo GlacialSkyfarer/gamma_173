@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "P": {
+        "item": "gamma173:reefwood_planks"
+      }
+
+  },
+  "pattern": [
+      "PPP"
+  ],
+  "result": {
+    "item": "gamma173:reefwood_trapdoor",
+    "count": 2
+  }
+}
