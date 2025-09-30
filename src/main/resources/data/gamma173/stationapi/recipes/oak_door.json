@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "P": {
+        "item": "oak_planks"
+      }
+
+  },
+  "pattern": [
+      "PP",
+      "PP",
+      "PP"
+  ],
+  "result": {
+    "item": "gamma173:oak_door",
+    "count": 1
+  }
+}

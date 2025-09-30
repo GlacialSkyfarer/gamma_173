@@ -1,0 +1,10 @@
+{
+
+  "parent": "gamma173:block/trapdoor/template_orientable_trapdoor_top",
+  "textures": {
+
+    "texture": "block/oak_trapdoor"
+
+  }
+
+}

@@ -1,0 +1,12 @@
+{
+
+  "parent": "gamma173:block/slab",
+  "textures": {
+
+    "top": "gamma173:block/reefwood_planks",
+    "bottom": "gamma173:block/reefwood_planks",
+    "side": "gamma173:block/reefwood_planks"
+
+  }
+
+}

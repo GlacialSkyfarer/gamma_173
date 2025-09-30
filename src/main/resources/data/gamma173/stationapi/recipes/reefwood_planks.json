@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gamma173:reefwood_log"
+    }
+  ],
+  "result": {
+    "item": "gamma173:reefwood_planks",
+    "count": 4
+  }
+}

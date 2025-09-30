@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "gamma173",
+  "version": "${version}",
+
+  "name": "GAMMA 173",
+  "description": "GlacialSkyfarer's mod.",
+  "authors": [
+    "GlacialSkyfarer"
+  ],
+  "contact": {
+    "homepage": "https://glass-launcher.net/",
+    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/gamma173/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+      "io.github.GlacialSkyfarer.gamma173.events.init.InitListener",
+      "io.github.GlacialSkyfarer.gamma173.events.init.BlockListener",
+      "io.github.GlacialSkyfarer.gamma173.events.init.ItemListener",
+      "io.github.GlacialSkyfarer.gamma173.events.init.AfterBlockAndItemListener",
+      "io.github.GlacialSkyfarer.gamma173.events.init.RecipeListener",
+      "io.github.GlacialSkyfarer.gamma173.reef_biome.events.init.BlockListener",
+      "io.github.GlacialSkyfarer.gamma173.events.init.PacketListener"
+    ],
+    "stationapi:event_bus_client": [
+      "io.github.GlacialSkyfarer.gamma173.events.init.client.TextureListener"
+    ],
+    "stationapi:event_bus_server": [
+    ]
+  },
+  "mixins": [
+    "gamma173.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  }
+
+}
