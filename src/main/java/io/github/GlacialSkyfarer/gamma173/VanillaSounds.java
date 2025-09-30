@@ -1,6 +1,6 @@
 package io.github.GlacialSkyfarer.gamma173;
 
-public abstract class Sounds {
+public abstract class VanillaSounds {
 
     public static final String CAVE_NOISE = "ambient.cave.cave";
     public static final String RAIN = "ambient.weather.rain";
@@ -50,43 +50,12 @@ public abstract class Sounds {
     public static final String ZOMBIE_WOOD_DOOR = "mob.zombie.wood";
     public static final String ZOMBIE_WOOD_DOOR_BREAK = "mob.zombie.woodbreak";
 
-    public static final String BLAZE = "mob.blaze.breathe";
-    public static final String BLAZE_DEATH = "mob.blaze.death";
-    public static final String BLAZE_HURT = "mob.blaze.hit";
-
-    public static final String OCELOT_HISS = "mob.cat.hiss";
-    public static final String OCELOT_HURT = "mob.cat.hitt";
-    public static final String OCELOT_MEOW = "mob.cat.meow";
-    public static final String OCELOT_PURR = "mob.cat.purr";
-    public static final String OCELOT_MRROW = "mob.cat.purreow";
-
-    public static final String ENDERMAN = "mob.endermen.idle";
-    public static final String ENDERMAN_DEATH = "mob.endermen.death";
-    public static final String ENDERMAN_HURT = "mob.endermen.hit";
-    public static final String ENDERMAN_TELEPORT = "mob.endermen.portal";
-    public static final String ENDERMAN_SCREAM = "mob.endermen.scream";
-    public static final String ENDERMAN_ENRAGED = "mob.endermen.stare";
-
     public static final String GHAST = "mob.ghast.moan";
     public static final String GHAST_HAPPY = "mob.ghast.affectionate scream";
     public static final String GHAST_FIREBALL = "mob.ghast.fireball4";
     public static final String GHAST_SCREAM = "mob.ghast.scream";
     public static final String GHAST_CHARGE = "mob.ghast.charge";
     public static final String GHAST_DEATH = "mob.ghast.death";
-
-    public static final String IRON_GOLEM_DEATH = "mob.irongolem.death";
-    public static final String IRON_GOLEM_HURT = "mob.irongolem.hit";
-    public static final String IRON_GOLEM_THROW = "mob.irongolem.throw";
-    public static final String IRON_GOLEM_WALK = "mob.irongolem.walk";
-
-    public static final String MAGMA_CUBE_BIG = "mob.magmacube.big";
-    public static final String MAGMA_CUBE_JUMP = "mob.magmacube.jump";
-    public static final String MAGMA_CUBE_SMALL = "mob.magmacube.small";
-
-    public static final String SILVERFISH = "mob.silverfish.say";
-    public static final String SILVERFISH_HURT = "mob.silverfish.hit";
-    public static final String SILVERFISH_DEATH = "mob.silverfish.kill";
-    public static final String SILVERFISH_STEP = "mob.silverfish.step";
 
     public static final String WOLF_BARK = "mob.wolf.bark";
     public static final String WOLF_DEATH = "mob.wolf.death";
@@ -115,26 +84,16 @@ public abstract class Sounds {
     public static final String PORTAL_TRIGGER = "portal.trigger";
 
     public static final String BOW_FIRE = "random.bow";
-    public static final String ARROW_HIT = "random.bowhit";
-    public static final String ITEM_BREAK = "random.break";
     public static final String BREATH = "random.breath";
-    public static final String BURP = "random.burp";
-    public static final String CHEST_OPEN = "random.chestopen";
-    public static final String CHEST_CLOSE = "random.chestclosed";
     public static final String CLICK = "random.click";
     public static final String DOOR_CLOSE = "random.door_close";
     public static final String DOOR_OPEN = "random.door_open";
-    public static final String DRINK = "random.drink";
-    public static final String DRR = "random.drr";
-    public static final String EAT = "random.eat";
-    public static final String EXPLODE = "random.old_explode";
-    public static final String NEW_EXPLODE = "random.explode";
+    public static final String ARROW_HIT = "random.drr";
+    public static final String EXPLODE = "random.explode";
     public static final String FIZZ = "random.fizz";
     public static final String FUSE = "random.fuse";
-    public static final String GLASS_break = "random.glass";
+    public static final String GLASS_BREAK = "random.glass";
     public static final String HURT_OOF = "random.hurt";
-    public static final String LEVEL_UP = "random.levelup";
-    public static final String EXPERIENCE = "random.orb";
     public static final String PICKUP = "random.pop";
     public static final String WOOD_CLICK = "random.wood click";
 
@@ -148,6 +107,8 @@ public abstract class Sounds {
 
     public static final String PISTON_IN = "tile.piston.in";
     public static final String PISTON_OUT = "tile.piston.out";
+
+    public static final String MINECART_ROLL = "vehicle.minecart";
 
     public static final String MUSIC_BLOCKS = "blocks";
     public static final String MUSIC_CAT = "cat";

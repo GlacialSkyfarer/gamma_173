@@ -1,6 +1,8 @@
 package io.github.GlacialSkyfarer.gamma173.packet;
 
+import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.client.Minecraft;
 import net.minecraft.network.NetworkHandler;
 import net.minecraft.network.packet.Packet;
 import net.modificationstation.stationapi.api.network.packet.ManagedPacket;
@@ -60,9 +62,8 @@ public class SoundPacket extends Packet implements ManagedPacket<SoundPacket> {
 
     @Override
     public void apply(NetworkHandler networkHandler) {
-
-        FabricLoader
-
+        if (FabricLoader.getInstance().getEnvironmentType().equals(EnvType.SERVER)) return;
+        Minecraft.INSTANCE.world.playSound(x,y,z,sound,volume,pitch);
     }
 
     @Override

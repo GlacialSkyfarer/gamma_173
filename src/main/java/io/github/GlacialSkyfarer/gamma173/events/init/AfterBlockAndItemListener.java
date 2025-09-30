@@ -4,8 +4,6 @@ import com.google.gson.Gson;
 import io.github.GlacialSkyfarer.gamma173.Gamma173;
 import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootEntry;
 import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootTable;
-import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootTableJson;
-import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootTableRegistry;
 import io.github.GlacialSkyfarer.gamma173.loot_table.predicates.RandomFactorPredicate;
 import io.github.GlacialSkyfarer.gamma173.loot_table.predicates.StatePropertyPredicate;
 import io.github.GlacialSkyfarer.gamma173.reef_biome.events.init.BlockListener;
@@ -20,13 +18,11 @@ public class AfterBlockAndItemListener {
 
         BlockListener.ReefwoodDoor.asItem().setMaxCount(1);
 
-        BlockLootTable t = new BlockLootTable().addEntry(new BlockLootEntry(BlockListener.ReefwoodDoor.asItem().id)
+        BlockLootTable t = new BlockLootTable().addEntry(new BlockLootEntry(Gamma173.NAMESPACE.id("reefwood_door"))
                 .addPredicate(new StatePropertyPredicate<>("open", true))
                 .addPredicate(new RandomFactorPredicate(0.5)));
         Identifier id = Gamma173.NAMESPACE.id("agwah");
 
-        BlockLootTableJson j = new BlockLootTableJson(id, t);
-        Gamma173.LOGGER.info(new Gson().toJson(j));
 
     }
 

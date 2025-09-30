@@ -23,7 +23,7 @@ public class BlockListener {
     @EventListener
     public static void registerBlocks(BlockRegistryEvent event) {
 
-        ReefwoodLog = new TemplateBlockWithLootTable(NAMESPACE.id("reefwood_log"), Material.WOOD)
+        ReefwoodLog = new TemplateBlock(NAMESPACE.id("reefwood_log"), Material.WOOD)
                 .setTranslationKey(NAMESPACE.id("reefwood_log"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(2.0f);

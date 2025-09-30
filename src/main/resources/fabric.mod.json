@@ -33,6 +33,7 @@
     "stationapi:event_bus_server": [
     ]
   },
+  "accessWidener": "gamma173.accesswidener",
   "mixins": [
     "gamma173.mixins.json"
   ],

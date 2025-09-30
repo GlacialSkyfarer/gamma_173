@@ -1,35 +1,22 @@
 package io.github.GlacialSkyfarer.gamma173.block;
 
-import io.github.GlacialSkyfarer.gamma173.Sounds;
 import io.github.GlacialSkyfarer.gamma173.Util;
-import io.github.GlacialSkyfarer.gamma173.packet.SoundPacket;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.mob.ZombieEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.item.ItemPlacementContext;
-import net.modificationstation.stationapi.api.network.packet.PacketHelper;
 import net.modificationstation.stationapi.api.state.StateManager;
 import net.modificationstation.stationapi.api.state.property.EnumProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
-import net.modificationstation.stationapi.api.util.StringIdentifiable;
-import net.modificationstation.stationapi.api.util.math.Direction;
 
-import java.util.List;
-import java.util.random.RandomGenerator;
-
-import static io.github.GlacialSkyfarer.gamma173.Gamma173.NAMESPACE;
-
-public class TemplateSlabBlock extends TemplateBlockWithLootTable {
+public class TemplateSlabBlock extends TemplateBlock {
 
     public static final EnumProperty<SlabType> TYPE = EnumProperty.of("type", SlabType.class);
 
