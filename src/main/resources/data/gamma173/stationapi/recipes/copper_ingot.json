@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "gamma173:copper_ore"
+  },
+  "result": {
+    "item": "gamma173:copper_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "I": {
+        "item": "gamma173:copper_ingot"
+      }
+
+  },
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "result": {
+    "item": "gamma173:copper_block",
+    "count": 1
+  }
+}

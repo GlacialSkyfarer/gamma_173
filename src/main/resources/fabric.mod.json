@@ -19,18 +19,13 @@
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "io.github.GlacialSkyfarer.gamma173.events.init.InitListener",
-      "io.github.GlacialSkyfarer.gamma173.events.init.BlockListener",
-      "io.github.GlacialSkyfarer.gamma173.events.init.ItemListener",
-      "io.github.GlacialSkyfarer.gamma173.events.init.AfterBlockAndItemListener",
-      "io.github.GlacialSkyfarer.gamma173.events.init.RecipeListener",
-      "io.github.GlacialSkyfarer.gamma173.reef_biome.events.init.BlockListener",
-      "io.github.GlacialSkyfarer.gamma173.events.init.PacketListener"
+      "io.github.GlacialSkyfarer.gamma173.events.init.CommonListener"
     ],
     "stationapi:event_bus_client": [
-      "io.github.GlacialSkyfarer.gamma173.events.init.client.TextureListener"
+      "io.github.GlacialSkyfarer.gamma173.events.init.ClientListener"
     ],
     "stationapi:event_bus_server": [
+      "io.github.GlacialSkyfarer.gamma173.events.init.ServerListener"
     ]
   },
   "accessWidener": "gamma173.accesswidener",

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "I": {
+        "item": "redstone"
+      }
+
+  },
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "result": {
+    "item": "gamma173:redstone_block",
+    "count": 1
+  }
+}

@@ -8,7 +8,8 @@
 
   },
   "pattern": [
-      "PPP"
+    "PPP",
+    "PPP"
   ],
   "result": {
     "item": "gamma173:reefwood_trapdoor",

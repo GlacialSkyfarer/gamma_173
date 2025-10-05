@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "I": {
+        "item": "coal"
+      }
+
+  },
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "result": {
+    "item": "gamma173:coal_block",
+    "count": 1
+  }
+}

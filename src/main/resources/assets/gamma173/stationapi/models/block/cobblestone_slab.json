@@ -1,0 +1,12 @@
+{
+
+  "parent": "gamma173:block/slab",
+  "textures": {
+
+    "top": "block/cobblestone",
+    "bottom": "block/cobblestone",
+    "side": "block/cobblestone"
+
+  }
+
+}

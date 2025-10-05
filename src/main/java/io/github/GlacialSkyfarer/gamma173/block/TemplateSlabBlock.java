@@ -1,6 +1,9 @@
 package io.github.GlacialSkyfarer.gamma173.block;
 
 import io.github.GlacialSkyfarer.gamma173.Util;
+import io.github.GlacialSkyfarer.gamma173.VanillaSounds;
+import io.github.GlacialSkyfarer.gamma173.packet.SoundPacket;
+import io.github.GlacialSkyfarer.gamma173.sound.SoundHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,6 +14,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.item.ItemPlacementContext;
+import net.modificationstation.stationapi.api.network.packet.PacketHelper;
 import net.modificationstation.stationapi.api.state.StateManager;
 import net.modificationstation.stationapi.api.state.property.EnumProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;
@@ -107,7 +111,7 @@ public class TemplateSlabBlock extends TemplateBlock {
             if (state.get(TYPE) == SlabType.BOTTOM) {
 
                 hand.count -= 1;
-//                PacketHelper.send(new SoundPacket(Sounds.MUSIC_CHIRP, x,y,z, 1, 1f + world.random.nextFloat()/2f));
+                SoundHelper.playSound(soundGroup.getBreakSound(), x,y,z, 1, 1f);
                 world.setBlockStateWithNotify(x, y, z, state.with(TYPE, SlabType.DOUBLE));
                 return true;
 
@@ -125,7 +129,7 @@ public class TemplateSlabBlock extends TemplateBlock {
             if (state.get(TYPE) == SlabType.TOP) {
 
                 hand.count -= 1;
-                world.playSound(x,y,z, soundGroup.getSound(),1, 1f + world.random.nextFloat()/2f);
+                SoundHelper.playSound(soundGroup.getBreakSound(), x,y,z, 1, 1f);
                 world.setBlockStateWithNotify(x, y, z, state.with(TYPE, SlabType.DOUBLE));
                 return true;
 

@@ -1,3 +1,6 @@
 accessWidener v2 named
 
 transitive-accessible field net/minecraft/client/Minecraft INSTANCE Lnet/minecraft/client/Minecraft;
+
+accessible field net/minecraft/item/ToolItem toolMaterial Lnet/minecraft/item/ToolMaterial;
+accessible field net/minecraft/item/ToolItem miningSpeed F

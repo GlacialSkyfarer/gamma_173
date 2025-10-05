@@ -6,8 +6,14 @@
   "mixins": [
     "ExampleMixin",
     "block.BlockMixin",
+    "feature.BirchTreeFeatureMixin",
     "feature.OakTreeFeatureMixin",
-    "item.ItemMixin"
+    "feature.PineTreeFeatureMixin",
+    "feature.SpruceTreeFeatureMixin",
+    "item.AxeItemMixin",
+    "item.ItemMixin",
+    "item.PickaxeItemMixin",
+    "item.ShovelItemMixin"
   ],
   "server": [
   ],

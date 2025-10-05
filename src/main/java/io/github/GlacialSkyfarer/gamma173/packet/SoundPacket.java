@@ -68,7 +68,7 @@ public class SoundPacket extends Packet implements ManagedPacket<SoundPacket> {
 
     @Override
     public int size() {
-        return 20 + sound.length();
+        return 34 + sound.length();
     }
 
     @Override

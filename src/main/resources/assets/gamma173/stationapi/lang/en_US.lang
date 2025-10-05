@@ -10,9 +10,22 @@ tile.@.reefwood_trapdoor.name=Reefwood Trapdoor
 tile.@.reefwood_trapdoor.desc=A trapdoor built from reefwood.\nGood for hiding away secrets.
 tile.@.reefwood_slab.name=Reefwood Slab
 tile.@.reefwood_slab.desc=A half-step fashioned from reefwood planks.
+tile.@.copper_block.name=Block of Copper
+tile.@.copper_block.desc=A block of solid copper.\nFavorite of the steampunk.
+tile.@.copper_tiles.name=Copper Tiles
+tile.@.copper_tiles.desc=Tiles carved from a copper block.
+tile.@.copper_ore.name=Copper Ore
+tile.@.copper_ore.desc=Oxidizing chunks of copper\nembedded in stone.
+tile.@.coal_block.name=Block of Coal
+tile.@.coal_block.desc=A block of solid coal.\nKeep away from fire!
+tile.@.redstone_block.name=Block of Redstone
+tile.@.redstone_block.desc=A block of solid redstone.\nThrums with latent energy.
+
+item.@.copper_ingot.name=Copper Ingot
+item.@.copper_ingot.desc=
 
 # Vanilla changes
-tile.stone.desc=A block of hard stone.\nRock and stone!
+tile.stone.desc=A block of hard stone.\nFor Karl!
 tile.grass.desc=A block of soft soil,\ntopped with a layer of grass.
 tile.dirt.desc=A block of soft soil.
 tile.stonebrick.desc=Many small stones, cobbled together.
@@ -27,9 +40,12 @@ tile.gravel.desc=A pile of small rocks and pebbles.\nValued greatly by a select 
 tile.oreGold.desc=Shimmering chunks of gold\nembedded in stone.
 tile.oreIron.desc=Gleaming chunks of iron\nembedded in stone.
 tile.oreCoal.desc=Dark chunks of coal\nembedded in stone.
-#Logs TODO
 tile.@.oak_log.name=Oak Log
 tile.@.oak_log.desc=A stump of wood from an oak tree.\nStands tall, no matter what.
+tile.@.spruce_log.name=Spruce Log
+tile.@.spruce_log.desc=A stump of wood from a spruce tree.\nSpah-RUCE.
+tile.@.birch_log.name=Birch Log
+tile.@.birch_log.desc=A stump of wood from a birch tree.\nAnyone else feel watched..?
 tile.log.name=Driftwood
 tile.log.desc=An old log from a time gone by.\nUnobtainable in normal gameplay.
 #Leaves TODO
@@ -95,6 +111,12 @@ tile.blockIron.desc=A sturdy block of pure iron.\nHeavy metal!
 tile.stoneSlab.name=Solidified Stone Double Slab
 tile.@.oak_slab.name=Oak Slab
 tile.@.oak_slab.desc=A half step fashioned from oak planks.
+tile.@.stone_slab.name=Stone Slab
+tile.@.stone_slab.desc=A half step fashioned from stone.
+tile.@.cobblestone_slab.name=Cobblestone Slab
+tile.@.cobblestone_slab.desc=A half step cobbled together\nfrom small stones.
+tile.@.sandstone_slab.name=Sandstone Slab
+tile.@.sandstone_slab.desc=A half step fashioned from sandstone.
 tile.stoneSlab.wood.name=Petrified Oak Slab
 tile.stoneSlab.stone.name=Solidified Stone Slab
 tile.stoneSlab.cobble.name=Condensed Cobblestone Slab
