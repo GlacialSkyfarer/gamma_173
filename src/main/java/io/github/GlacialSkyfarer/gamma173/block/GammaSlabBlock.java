@@ -1,8 +1,6 @@
 package io.github.GlacialSkyfarer.gamma173.block;
 
 import io.github.GlacialSkyfarer.gamma173.Util;
-import io.github.GlacialSkyfarer.gamma173.VanillaSounds;
-import io.github.GlacialSkyfarer.gamma173.packet.SoundPacket;
 import io.github.GlacialSkyfarer.gamma173.sound.SoundHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,17 +12,16 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.item.ItemPlacementContext;
-import net.modificationstation.stationapi.api.network.packet.PacketHelper;
 import net.modificationstation.stationapi.api.state.StateManager;
 import net.modificationstation.stationapi.api.state.property.EnumProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
 
-public class TemplateSlabBlock extends TemplateBlock {
+public class GammaSlabBlock extends TemplateBlock {
 
     public static final EnumProperty<SlabType> TYPE = EnumProperty.of("type", SlabType.class);
 
-    public TemplateSlabBlock(Identifier identifier, Material material) {
+    public GammaSlabBlock(Identifier identifier, Material material) {
         super(identifier, material);
     }
 

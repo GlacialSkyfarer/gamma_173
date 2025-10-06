@@ -18,14 +18,14 @@ import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
 import net.modificationstation.stationapi.api.util.math.Direction;
 
-public class TemplateDoorBlock extends TemplateBlockWithLootTable {
+public class GammaDoorBlock extends TemplateBlock {
 
     public static final BooleanProperty TOP = BooleanProperty.of("top");
     public static final DirectionProperty FACING = DirectionProperty.of("facing", Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST);
     public static final BooleanProperty FLIPPED = BooleanProperty.of("flipped");
     public static final BooleanProperty OPEN = BooleanProperty.of("open");
 
-    public TemplateDoorBlock(Identifier identifier, Material material) {
+    public GammaDoorBlock(Identifier identifier, Material material) {
         super(identifier, material);
     }
 

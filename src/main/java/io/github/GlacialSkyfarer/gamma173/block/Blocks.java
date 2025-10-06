@@ -41,28 +41,28 @@ public class Blocks {
                 .setTranslationKey(NAMESPACE.id("birch_log"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(2.0f);
-        OAK_DOOR = new TemplateDoorBlock(NAMESPACE.id("oak_door"), Material.WOOD)
+        OAK_DOOR = new GammaDoorBlock(NAMESPACE.id("oak_door"), Material.WOOD)
                 .setTranslationKey(NAMESPACE.id("oak_door"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(3.0f)
                 .disableTrackingStatistics();
-        OAK_TRAPDOOR = new TemplateTrapdoorBlock(NAMESPACE.id("oak_trapdoor"), Material.WOOD)
+        OAK_TRAPDOOR = new GammaTrapdoorBlock(NAMESPACE.id("oak_trapdoor"), Material.WOOD)
                 .setTranslationKey(NAMESPACE.id("oak_trapdoor"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(3.0f);
-        OAK_SLAB = new TemplateSlabBlock(NAMESPACE.id("oak_slab"), Material.WOOD)
+        OAK_SLAB = new GammaSlabBlock(NAMESPACE.id("oak_slab"), Material.WOOD)
                 .setTranslationKey(NAMESPACE.id("oak_slab"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
                 .setHardness(2.0f);
-        STONE_SLAB = new TemplateSlabBlock(NAMESPACE.id("stone_slab"), Material.STONE)
+        STONE_SLAB = new GammaSlabBlock(NAMESPACE.id("stone_slab"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("stone_slab"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
                 .setHardness(1.5f);
-        COBBLESTONE_SLAB = new TemplateSlabBlock(NAMESPACE.id("cobblestone_slab"), Material.STONE)
+        COBBLESTONE_SLAB = new GammaSlabBlock(NAMESPACE.id("cobblestone_slab"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("cobblestone_slab"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
                 .setHardness(2.0f);
-        SANDSTONE_SLAB = new TemplateSlabBlock(NAMESPACE.id("sandstone_slab"), Material.STONE)
+        SANDSTONE_SLAB = new GammaSlabBlock(NAMESPACE.id("sandstone_slab"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("sandstone_slab"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
                 .setHardness(0.8f);

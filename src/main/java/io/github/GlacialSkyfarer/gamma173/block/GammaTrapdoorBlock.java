@@ -19,13 +19,13 @@ import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
 import net.modificationstation.stationapi.api.util.math.Direction;
 
-public class TemplateTrapdoorBlock extends TemplateBlockWithLootTable {
+public class GammaTrapdoorBlock extends TemplateBlock {
 
     public static final DirectionProperty FACING = DirectionProperty.of("facing", Direction.NORTH, Direction.SOUTH, Direction.EAST, Direction.WEST);
     public static final BooleanProperty TOP = BooleanProperty.of("top");
     public static final BooleanProperty OPEN = BooleanProperty.of("open");
 
-    public TemplateTrapdoorBlock(Identifier identifier, Material material) {
+    public GammaTrapdoorBlock(Identifier identifier, Material material) {
         super(identifier, material);
     }
 

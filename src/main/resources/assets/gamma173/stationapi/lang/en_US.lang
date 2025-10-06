@@ -24,6 +24,26 @@ tile.@.redstone_block.desc=A block of solid redstone.\nThrums with latent energy
 item.@.copper_ingot.name=Copper Ingot
 item.@.copper_ingot.desc=
 
+item.@.rose_gold_sword.name=Rose Gold Sword
+item.@.rose_gold_sword.desc=
+item.@.rose_gold_pickaxe.name=Rose Gold Pickaxe
+item.@.rose_gold_pickaxe.desc=
+item.@.rose_gold_axe.name=Rose Gold Axe
+item.@.rose_gold_axe.desc=
+item.@.rose_gold_shovel.name=Rose Gold Shovel
+item.@.rose_gold_shovel.desc=
+item.@.rose_gold_hoe.name=Rose Gold Hoe
+item.@.rose_gold_hoe.desc=
+
+item.@.rose_gold_helmet.name=Rose Gold Helmet
+item.@.rose_gold_helmet.desc=
+item.@.rose_gold_chestplate.name=Rose Gold Chestplate
+item.@.rose_gold_chestplate.desc=
+item.@.rose_gold_leggings.name=Rose Gold Leggings
+item.@.rose_gold_leggings.desc=
+item.@.rose_gold_boots.name=Rose Gold Boots
+item.@.rose_gold_boots.desc=
+
 # Vanilla changes
 tile.stone.desc=A block of hard stone.\nFor Karl!
 tile.grass.desc=A block of soft soil,\ntopped with a layer of grass.

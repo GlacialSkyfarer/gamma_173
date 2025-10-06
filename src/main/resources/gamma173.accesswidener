@@ -4,3 +4,5 @@ transitive-accessible field net/minecraft/client/Minecraft INSTANCE Lnet/minecra
 
 accessible field net/minecraft/item/ToolItem toolMaterial Lnet/minecraft/item/ToolMaterial;
 accessible field net/minecraft/item/ToolItem miningSpeed F
+
+accessible field net/minecraft/item/ArmorItem DURABILITY_BY_SLOT [I
