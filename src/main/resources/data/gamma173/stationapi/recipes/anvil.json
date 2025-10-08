@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "I": {
+        "item": "iron_block"
+      },
+      "i": {
+        "item": "iron_ingot"
+      }
+
+  },
+  "pattern": [
+    "III",
+    " i ",
+    "iii"
+  ],
+  "result": {
+    "item": "gamma173:anvil",
+    "count": 1
+  }
+}

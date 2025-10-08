@@ -6,3 +6,5 @@ accessible field net/minecraft/item/ToolItem toolMaterial Lnet/minecraft/item/To
 accessible field net/minecraft/item/ToolItem miningSpeed F
 
 accessible field net/minecraft/item/ArmorItem DURABILITY_BY_SLOT [I
+
+accessible method net/minecraft/screen/ScreenHandler addSlot (Lnet/minecraft/screen/slot/Slot;)V

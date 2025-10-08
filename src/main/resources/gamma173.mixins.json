@@ -10,10 +10,15 @@
     "feature.OakTreeFeatureMixin",
     "feature.PineTreeFeatureMixin",
     "feature.SpruceTreeFeatureMixin",
+    "item.ArmorItemMixin",
     "item.AxeItemMixin",
+    "item.FishingRodItemMixin",
     "item.ItemMixin",
     "item.PickaxeItemMixin",
-    "item.ShovelItemMixin"
+    "item.ShearsItemMixin",
+    "item.ShovelItemMixin",
+    "item.SwordItemMixin",
+    "item.ToolItemMixin"
   ],
   "server": [
   ],

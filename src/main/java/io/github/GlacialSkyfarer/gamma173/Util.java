@@ -1,6 +1,11 @@
 package io.github.GlacialSkyfarer.gamma173;
 
+import io.github.GlacialSkyfarer.gamma173.interfaces.IHasRepairMaterial;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.inventory.Inventory;
+import net.minecraft.item.Item;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.slot.Slot;
 
 public abstract class Util {
 
@@ -20,6 +25,27 @@ public abstract class Util {
         }
 
         return result;
+    }
+
+    public static void addPlayerInventory(ScreenHandler screenHandler, Inventory inventory, int xOffset, int yOffset) {
+        for(int y = 0; y < 3; ++y) {
+            for(int x = 0; x < 9; ++x) {
+                screenHandler.addSlot(new Slot(inventory, x + y * 9 + 9, 8 + x * 18, 84 + y * 18));
+            }
+        }
+        //Hotbar
+        for(int x = 0; x < 9; ++x) {
+            screenHandler.addSlot(new Slot(inventory, x, 8 + x * 18, 142));
+        }
+    }
+
+    public static void addPlayerInventory(ScreenHandler screenHandler, Inventory inventory) { addPlayerInventory(screenHandler, inventory, 0, 0); }
+
+    public static Item setRepairMaterial(Item item, Item material) {
+        if (item instanceof IHasRepairMaterial iCanHas) {
+            return iCanHas.gamma_173$setRepairMaterial(material);
+        }
+        return item;
     }
 
 }

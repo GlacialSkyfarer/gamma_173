@@ -20,6 +20,8 @@ tile.@.coal_block.name=Block of Coal
 tile.@.coal_block.desc=A block of solid coal.\nKeep away from fire!
 tile.@.redstone_block.name=Block of Redstone
 tile.@.redstone_block.desc=A block of solid redstone.\nThrums with latent energy.
+tile.@.anvil.name=Anvil
+tile.@.anvil.desc=A hefty anvil used for\nenhancing and repairing equipment.\nOr dropping on people.
 
 item.@.copper_ingot.name=Copper Ingot
 item.@.copper_ingot.desc=

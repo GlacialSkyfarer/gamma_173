@@ -24,7 +24,8 @@ public class Blocks {
             COPPER_ORE,
             COPPER_TILES,
             COAL_BLOCK,
-            REDSTONE_BLOCK;
+            REDSTONE_BLOCK,
+            ANVIL;
 
     public static void registerBlocks(BlockRegistryEvent event) {
 
@@ -92,6 +93,11 @@ public class Blocks {
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
                 .setHardness(3.0f)
                 .setResistance(7.0f);
+        ANVIL = new AnvilBlock(NAMESPACE.id("anvil"), Material.METAL)
+                .setTranslationKey(NAMESPACE.id("anvil"))
+                .setSoundGroup(Block.METAL_SOUND_GROUP)
+                .setHardness(7.0f)
+                .setResistance(10.0f);
 
     }
 }

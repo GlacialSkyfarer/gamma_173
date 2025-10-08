@@ -1,12 +1,16 @@
 package io.github.GlacialSkyfarer.gamma173.item;
 
 import io.github.GlacialSkyfarer.gamma173.Gamma173;
+import io.github.GlacialSkyfarer.gamma173.interfaces.IHasRepairMaterial;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterial;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.item.tool.ToolLevel;
 import net.modificationstation.stationapi.api.item.tool.ToolMaterialFactory;
 import net.modificationstation.stationapi.api.template.item.*;
+
+import static io.github.GlacialSkyfarer.gamma173.Util.setRepairMaterial;
 
 public class Items {
 
@@ -58,6 +62,17 @@ public class Items {
                 .setTranslationKey(Gamma173.NAMESPACE.id("rose_gold_leggings"));
         ROSE_GOLD_BOOTS = new GammaArmorItem(Gamma173.NAMESPACE.id("rose_gold_boots"), 20, 3, "rose_gold")
                 .setTranslationKey(Gamma173.NAMESPACE.id("rose_gold_boots"));
+
+        setRepairMaterial(ROSE_GOLD_SWORD, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_PICKAXE, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_AXE, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_SHOVEL, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_HOE, Item.GOLD_INGOT);
+
+        setRepairMaterial(ROSE_GOLD_HELMET, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_CHESTPLATE, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_LEGGINGS, Item.GOLD_INGOT);
+        setRepairMaterial(ROSE_GOLD_BOOTS, Item.GOLD_INGOT);
 
     }
 
