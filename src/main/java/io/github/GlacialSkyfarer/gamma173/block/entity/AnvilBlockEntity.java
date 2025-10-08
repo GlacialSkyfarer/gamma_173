@@ -158,7 +158,8 @@ public class AnvilBlockEntity extends BlockEntity implements Inventory {
                 item instanceof SwordItem ||
                 item instanceof ShearsItem ||
                 item instanceof FishingRodItem) return 0.65f;
-        if (item instanceof ShovelItem) return 1f;
+        if (item instanceof ShovelItem ||
+        item instanceof FlintAndSteel) return 1f;
 
         if (item instanceof ArmorItem armor) {
             int slot = armor.equipmentSlot;

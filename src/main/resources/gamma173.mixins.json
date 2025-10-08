@@ -13,6 +13,7 @@
     "item.ArmorItemMixin",
     "item.AxeItemMixin",
     "item.FishingRodItemMixin",
+    "item.FlintAndSteelMixin",
     "item.ItemMixin",
     "item.PickaxeItemMixin",
     "item.ShearsItemMixin",

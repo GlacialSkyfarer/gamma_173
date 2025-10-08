@@ -112,6 +112,7 @@ public class CommonListener {
 
         setRepairMaterial(Item.SHEARS, Item.IRON_INGOT);
         setRepairMaterial(Item.FISHING_ROD, Item.STRING);
+        setRepairMaterial(Item.FLINT_AND_STEEL, Item.FLINT);
 
     }
 
