@@ -9,7 +9,7 @@ public class BlockLootTableJson {
 
     }
 
-    public String identifier = "";
+    public String identifier;
     public BlockLootTable table;
 
 }

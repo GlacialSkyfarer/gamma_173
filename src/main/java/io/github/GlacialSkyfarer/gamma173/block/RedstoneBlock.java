@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class RedstoneBlock extends TemplateBlock {
 
-    public RedstoneBlock(Identifier identifier, Material material) {
+    public RedstoneBlock(Identifier identifier, Material ignored) {
         super(identifier, Material.PISTON_BREAKABLE);
     }
 

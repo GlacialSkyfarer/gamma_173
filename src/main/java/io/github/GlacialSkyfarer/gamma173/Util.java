@@ -10,12 +10,6 @@ public abstract class Util {
 
     }
 
-    public static String convertNameToDesc(String input) {
-
-        return input.replace(".name", ".desc");
-
-    }
-
     public static String[] separateLines(String string, String prefix, String suffix) {
         String[] result = string.split("\n");
 

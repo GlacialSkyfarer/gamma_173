@@ -23,7 +23,7 @@ public class BlockLootTable {
 
     public List<ItemStack> getDrops(Random random, World world, BlockState state, int x, int y, int z) {
 
-        List<ItemStack> drops = new ArrayList<ItemStack>();
+        List<ItemStack> drops = new ArrayList<>();
         for (BlockLootEntry e : entries) {
             ItemStack i = e.getDrop(random, world, state, x,y,z);
             if (i != null) {

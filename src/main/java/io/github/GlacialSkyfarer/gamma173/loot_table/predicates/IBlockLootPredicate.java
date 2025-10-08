@@ -6,7 +6,7 @@ import java.util.Random;
 
 public interface IBlockLootPredicate {
 
-    public boolean isFulfilled(BlockState state, Random random);
+    boolean isFulfilled(BlockState state, Random random);
 
 }
 
