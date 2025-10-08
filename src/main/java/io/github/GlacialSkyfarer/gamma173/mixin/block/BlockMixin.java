@@ -3,7 +3,6 @@ package io.github.GlacialSkyfarer.gamma173.mixin.block;
 import io.github.GlacialSkyfarer.gamma173.interfaces.IGetSetBlockLootTable;
 import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootTable;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

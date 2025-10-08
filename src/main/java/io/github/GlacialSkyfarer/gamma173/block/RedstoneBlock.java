@@ -1,6 +1,5 @@
 package io.github.GlacialSkyfarer.gamma173.block;
 
-import net.minecraft.block.MapColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;

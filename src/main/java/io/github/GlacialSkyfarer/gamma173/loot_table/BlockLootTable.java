@@ -1,8 +1,5 @@
 package io.github.GlacialSkyfarer.gamma173.loot_table;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.block.BlockState;

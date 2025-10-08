@@ -1,7 +1,10 @@
 package io.github.GlacialSkyfarer.gamma173.mixin.item;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.*;
+import net.minecraft.item.AxeItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 

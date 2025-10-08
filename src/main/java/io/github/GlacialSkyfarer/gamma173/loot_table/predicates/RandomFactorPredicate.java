@@ -1,9 +1,6 @@
 package io.github.GlacialSkyfarer.gamma173.loot_table.predicates;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import net.modificationstation.stationapi.api.block.BlockState;
-import net.modificationstation.stationapi.api.state.property.Property;
 
 import java.util.Random;
 

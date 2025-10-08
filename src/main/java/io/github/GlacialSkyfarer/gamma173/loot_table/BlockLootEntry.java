@@ -1,16 +1,15 @@
 package io.github.GlacialSkyfarer.gamma173.loot_table;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import io.github.GlacialSkyfarer.gamma173.loot_table.predicates.IBlockLootPredicate;
-import net.glasslauncher.mods.alwaysmoreitems.gui.widget.ingredients.ItemStackHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.modificationstation.stationapi.api.block.BlockState;
 import net.modificationstation.stationapi.api.registry.ItemRegistry;
 import net.modificationstation.stationapi.api.util.Identifier;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class BlockLootEntry {
 

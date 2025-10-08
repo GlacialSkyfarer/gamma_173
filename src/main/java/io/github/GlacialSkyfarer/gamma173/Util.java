@@ -1,7 +1,6 @@
 package io.github.GlacialSkyfarer.gamma173;
 
 import net.minecraft.entity.player.PlayerEntity;
-import net.modificationstation.stationapi.api.item.ItemUsageContext;
 
 public abstract class Util {
 
