@@ -36,6 +36,7 @@ public class PickaxeItemMixin extends ToolItem {
         addedEffectiveBlocks.add(Block.RAIL);
         addedEffectiveBlocks.add(Block.POWERED_RAIL);
         addedEffectiveBlocks.add(Block.DETECTOR_RAIL);
+        addedEffectiveBlocks.add(Block.OBSIDIAN);
 
     }
 

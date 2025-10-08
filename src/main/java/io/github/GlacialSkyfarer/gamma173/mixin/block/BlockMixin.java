@@ -6,6 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.ModifyArg;
 
 @Mixin(Block.class)
 public class BlockMixin implements IGetSetBlockLootTable {
@@ -21,6 +23,13 @@ public class BlockMixin implements IGetSetBlockLootTable {
 
     public BlockLootTable gamma_173$getLootTable() {
         return lootTable;
+    }
+
+    @ModifyArg(method="<clinit>", at=@At(value="INVOKE", target="net/minecraft/block/ObsidianBlock.setHardness (F)Lnet/minecraft/block/Block;"), index = 0)
+    private static float overrideObsidianHardness(float original) {
+
+        return 40.0f;
+
     }
 
 }
