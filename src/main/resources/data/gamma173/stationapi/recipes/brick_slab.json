@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "P": {
+        "item": "bricks"
+      }
+
+  },
+  "pattern": [
+      "PPP"
+  ],
+  "result": {
+    "item": "gamma173:brick_slab",
+    "count": 6
+  }
+}

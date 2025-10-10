@@ -1,7 +1,5 @@
 More copper blocks (Tile stairs, doors)
 Replace stairs
-Rose gold
-Anvil
 Item descriptions
 replace pressure plate
 replace button
@@ -13,5 +11,11 @@ Add equipment trinkets system
 add actual trinkets to use
 Fix Redstone
 add stonecutter
-add stone bricks, other related recipes/blocks
+add stone bricks, carved stone, stone pillar
+Netherrack bricks, carved netherrack, netherrack pillar
 Add other music discs
+Better anvil model
+Falling anvil
+Anvil sounds
+Replace wool
+Hardened clay

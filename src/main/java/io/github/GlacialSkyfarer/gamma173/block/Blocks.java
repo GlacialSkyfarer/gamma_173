@@ -25,7 +25,8 @@ public class Blocks {
             COPPER_TILES,
             COAL_BLOCK,
             REDSTONE_BLOCK,
-            ANVIL;
+            ANVIL,
+            BRICK_SLAB;
 
     public static void registerBlocks(BlockRegistryEvent event) {
 
@@ -97,6 +98,11 @@ public class Blocks {
                 .setTranslationKey(NAMESPACE.id("anvil"))
                 .setSoundGroup(Block.METAL_SOUND_GROUP)
                 .setHardness(7.0f)
+                .setResistance(10.0f);
+        BRICK_SLAB = new GammaSlabBlock(NAMESPACE.id("brick_slab"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("brick_slab"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(2.0f)
                 .setResistance(10.0f);
 
     }

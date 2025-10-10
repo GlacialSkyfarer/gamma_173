@@ -1,6 +1,7 @@
 package io.github.GlacialSkyfarer.gamma173.block.entity;
 
 import io.github.GlacialSkyfarer.gamma173.interfaces.IHasRepairMaterial;
+import io.github.recipe.AnvilRecipeHandler;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
@@ -119,8 +120,14 @@ public class AnvilBlockEntity extends BlockEntity implements Inventory {
         if (tryCombineTools(material, gear, gearItem, materialItem)) return;
         if (tryUseMaterial(gear, gearItem, materialItem)) return;
 
-        //Check for recipes instead of repairing
+        if (gear.getDamage() <= 0 && material.getDamage() <= 0) {
+            ItemStack result = AnvilRecipeHandler.getItem(gearItem, materialItem);
 
+            if (result != null) {
+                inventory[2] = result;
+                return;
+            }
+        }
     }
 
     private boolean tryCombineTools(ItemStack material, ItemStack gear, Item gearItem, Item materialItem) {

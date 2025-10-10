@@ -1,1 +1,1 @@
-A tier of tools and armor that lies between iron and diamond. Crafted by combining a golden item and a [[Copper Ingot]] on an anvil.
+A tier of tools and armor that lies between iron and diamond. Crafted by combining a golden item and a [[Copper Ingot]] on an [[Anvil]].
