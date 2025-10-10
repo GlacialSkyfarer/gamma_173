@@ -17,6 +17,8 @@ import net.modificationstation.stationapi.api.state.property.EnumProperty;
 import net.modificationstation.stationapi.api.template.block.TemplateBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
 
+import java.util.List;
+
 public class GammaSlabBlock extends TemplateBlock {
 
     public static final EnumProperty<SlabType> TYPE = EnumProperty.of("type", SlabType.class);
@@ -66,14 +68,14 @@ public class GammaSlabBlock extends TemplateBlock {
         return super.raycast(world, x, y, z, startPos, endPos);
     }
 
-//    @Override
-//    public List<ItemStack> getDropList(World world, int x, int y, int z, BlockState state, int meta) {
-//        if (state.isAir()) return null;
-//        if (state.get(TYPE) == SlabType.DOUBLE) {
-//            return  List.of(new ItemStack(asItem()), new ItemStack(asItem()));
-//        }
-//        return super.getDropList(world, x, y, z, state, meta);
-//    }
+    @Override
+    public List<ItemStack> getDropList(World world, int x, int y, int z, BlockState state, int meta) {
+        if (state.isAir()) return null;
+        if (state.get(TYPE) == SlabType.DOUBLE) {
+            return  List.of(new ItemStack(asItem()), new ItemStack(asItem()));
+        }
+        return super.getDropList(world, x, y, z, state, meta);
+    }
 
     @Override
     public boolean isFullCube() {
