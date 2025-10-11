@@ -1,17 +1,10 @@
 package io.github.GlacialSkyfarer.gamma173.events.init;
 
-import com.google.gson.Gson;
 import io.github.DanyGames2014.CraftingHelper;
 import io.github.GlacialSkyfarer.gamma173.Gamma173;
-import io.github.GlacialSkyfarer.gamma173.block.AnvilBlock;
 import io.github.GlacialSkyfarer.gamma173.block.Blocks;
 import io.github.GlacialSkyfarer.gamma173.block.entity.AnvilBlockEntity;
 import io.github.GlacialSkyfarer.gamma173.item.Items;
-import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootEntry;
-import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootTable;
-import io.github.GlacialSkyfarer.gamma173.loot_table.BlockLootTableJson;
-import io.github.GlacialSkyfarer.gamma173.loot_table.predicates.RandomFactorPredicate;
-import io.github.GlacialSkyfarer.gamma173.loot_table.predicates.StatePropertyPredicate;
 import io.github.GlacialSkyfarer.gamma173.packet.SoundPacket;
 import io.github.GlacialSkyfarer.gamma173.reef_biome.block.ReefBiomeBlocks;
 import io.github.recipe.AnvilRecipe;
@@ -29,7 +22,6 @@ import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
 import net.modificationstation.stationapi.api.event.registry.ItemRegistryEvent;
 import net.modificationstation.stationapi.api.registry.PacketTypeRegistry;
 import net.modificationstation.stationapi.api.registry.Registry;
-import net.modificationstation.stationapi.api.util.Identifier;
 
 import static io.github.GlacialSkyfarer.gamma173.Gamma173.NAMESPACE;
 import static io.github.GlacialSkyfarer.gamma173.Util.setRepairMaterial;

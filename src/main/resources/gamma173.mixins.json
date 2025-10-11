@@ -19,7 +19,9 @@
     "item.ShearsItemMixin",
     "item.ShovelItemMixin",
     "item.SwordItemMixin",
-    "item.ToolItemMixin"
+    "item.ToolItemMixin",
+    "worldgen.BiomeBuilderMixin",
+    "worldgen.OverworldChunkGeneratorMixin"
   ],
   "server": [
   ],

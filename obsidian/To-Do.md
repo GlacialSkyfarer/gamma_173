@@ -8,7 +8,6 @@ replace button
 replace lever
 replace leaves
 replace iron doors
-generate copper
 add stonecutter
 add stone bricks, carved stone, stone pillar
 Netherrack bricks, carved netherrack, netherrack pillar
@@ -21,6 +20,7 @@ Replace wool
 Hardened clay
 farmable pumpkins/melons
 Wood variant planks, doors, etc
+Block loot table system
 
 ALPHA 1.1
 Add equipment trinkets system
@@ -32,6 +32,8 @@ Creative mode
 Journey mode
 Colored lighting?
 Backported surface biomes
+Crossbow (old bow with slight delay betweeen hits)
+New bow (more precise, higher damage, needs to be pulled)
 Cave biomes
 
 EVENTUALLY
