@@ -9,7 +9,7 @@ import net.minecraft.screen.slot.Slot;
 
 public class AnvilScreenHandler extends ScreenHandler {
 
-    private AnvilBlockEntity anvil;
+    private final AnvilBlockEntity anvil;
 
     public AnvilScreenHandler(PlayerEntity player, AnvilBlockEntity anvil) {
 
@@ -21,6 +21,14 @@ public class AnvilScreenHandler extends ScreenHandler {
 
         Util.addPlayerInventory(this, player.inventory);
 
+    }
+
+    @Override
+    public void onClosed(PlayerEntity player) {
+        if (anvil.getStack(0) != null) player.dropItem(anvil.getStack(0));
+        if (anvil.getStack(0) != null) player.dropItem(anvil.getStack(1));
+        anvil.clearStacks();
+        super.onClosed(player);
     }
 
     @Override

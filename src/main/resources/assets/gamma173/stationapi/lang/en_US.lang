@@ -24,6 +24,16 @@ tile.@.anvil.name=Anvil
 tile.@.anvil.desc=A hefty anvil used for\nenhancing and repairing equipment.\nOr dropping on people.
 tile.@.brick_slab.name=Brick Slab
 tile.@.brick_slab.desc=A half-step of fired clay.
+tile.@.stonecutter.name=Stonecutter
+tile.@.stonecutter.desc=A workstation made for shaping stone.\nPocket Edition special.
+tile.@.stone_bricks.name=Stone Bricks
+tile.@.stone_bricks.desc=Sturdy bricks chiseled from stone.
+tile.@.chiseled_stone.name=Chiseled Stone
+tile.@.chiseled_stone.desc=Stone chiseled in precise vertical patterns.
+tile.@.carved_stone.name=Carved Stone
+tile.@.carved_stone.desc=Stone carved smooth.\nCrashslab 2.0!
+tile.@.stone_brick_slab.name=Stone Brick Slab
+tile.@.stone_brick_slab.desc=A half-step made from stone bricks.
 
 item.@.copper_ingot.name=Copper Ingot
 item.@.copper_ingot.desc=

@@ -10,7 +10,12 @@
     "gamma173:cobblestone_slab",
     "gamma173:sandstone_slab",
     "gamma173:anvil",
-    "gamma173:brick_slab"
+    "gamma173:brick_slab",
+    "gamma173:stonecutter",
+    "gamma173:stone_bricks",
+    "gamma173:chiseled_stone",
+    "gamma173:carved_stone",
+    "gamma173:stone_brick_slab"
 
   ]
 }
