@@ -1,4 +1,4 @@
-package io.github.recipe;
+package io.github.GlacialSkyfarer.gamma173.recipe;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

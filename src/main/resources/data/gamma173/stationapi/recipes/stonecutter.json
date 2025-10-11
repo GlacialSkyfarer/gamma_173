@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+
+      "s": {
+        "item": "stone"
+      },
+      "i": {
+        "item": "iron_ingot"
+      }
+
+  },
+  "pattern": [
+    "sss",
+    "sis",
+    "sss"
+  ],
+  "result": {
+    "item": "gamma173:stonecutter",
+    "count": 1
+  }
+}

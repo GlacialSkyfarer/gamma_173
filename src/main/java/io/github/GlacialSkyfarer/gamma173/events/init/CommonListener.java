@@ -4,15 +4,15 @@ import io.github.DanyGames2014.CraftingHelper;
 import io.github.GlacialSkyfarer.gamma173.Gamma173;
 import io.github.GlacialSkyfarer.gamma173.block.Blocks;
 import io.github.GlacialSkyfarer.gamma173.block.entity.AnvilBlockEntity;
+import io.github.GlacialSkyfarer.gamma173.block.entity.StonecutterBlockEntity;
 import io.github.GlacialSkyfarer.gamma173.item.Items;
 import io.github.GlacialSkyfarer.gamma173.packet.SoundPacket;
+import io.github.GlacialSkyfarer.gamma173.recipe.StonecutterRecipeHandler;
 import io.github.GlacialSkyfarer.gamma173.reef_biome.block.ReefBiomeBlocks;
-import io.github.recipe.AnvilRecipe;
-import io.github.recipe.AnvilRecipeHandler;
+import io.github.GlacialSkyfarer.gamma173.recipe.AnvilRecipeHandler;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.modificationstation.stationapi.api.event.block.entity.BlockEntityRegisterEvent;
 import net.modificationstation.stationapi.api.event.mod.InitEvent;
 import net.modificationstation.stationapi.api.event.network.packet.PacketRegisterEvent;
@@ -128,21 +128,14 @@ public class CommonListener {
         CraftingHelper.removeRecipe(Block.WOODEN_STAIRS);
         CraftingHelper.removeRecipe(Block.WOOL);
 
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_SWORD, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_SWORD)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_PICKAXE, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_PICKAXE)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_AXE, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_AXE)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_SHOVEL, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_SHOVEL)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_HOE, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_HOE)));
-
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_HELMET, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_HELMET)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_CHESTPLATE, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_CHESTPLATE)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_LEGGINGS, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_LEGGINGS)));
-        AnvilRecipeHandler.register(new AnvilRecipe(Item.GOLDEN_BOOTS, Items.COPPER_INGOT, new ItemStack(Items.ROSE_GOLD_BOOTS)));
+        AnvilRecipeHandler.registerRecipes();
+        StonecutterRecipeHandler.registerRecipes();
     }
 
     @EventListener
     public static void registerBlockEntities(BlockEntityRegisterEvent event) {
         event.register(AnvilBlockEntity.class, NAMESPACE.id("anvil").toString());
+        event.register(StonecutterBlockEntity.class, NAMESPACE.id("stonecutter").toString());
     }
 
 }

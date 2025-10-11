@@ -26,7 +26,12 @@ public class Blocks {
             COAL_BLOCK,
             REDSTONE_BLOCK,
             ANVIL,
-            BRICK_SLAB;
+            BRICK_SLAB,
+            STONECUTTER,
+            STONE_BRICKS,
+            CHISELED_STONE,
+            CARVED_STONE,
+            STONE_BRICK_SLAB;
 
     public static void registerBlocks(BlockRegistryEvent event) {
 
@@ -99,11 +104,35 @@ public class Blocks {
                 .setSoundGroup(Block.METAL_SOUND_GROUP)
                 .setHardness(7.0f)
                 .setResistance(10.0f);
+        STONECUTTER = new StonecutterBlock(NAMESPACE.id("stonecutter"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("stonecutter"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(5.0f)
+                .setResistance(10.0f);
         BRICK_SLAB = new GammaSlabBlock(NAMESPACE.id("brick_slab"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("brick_slab"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
                 .setHardness(2.0f)
                 .setResistance(10.0f);
-
+        STONE_BRICKS = new TemplateBlock(NAMESPACE.id("stone_bricks"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("stone_bricks"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(2.0f)
+                .setResistance(10.0f);
+        CHISELED_STONE = new TemplateBlock(NAMESPACE.id("chiseled_stone"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("chiseled_stone"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(2.0f)
+                .setResistance(10.0f);
+        CARVED_STONE = new TemplateBlock(NAMESPACE.id("carved_stone"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("carved_stone"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(2.0f)
+                .setResistance(10.0f);
+        STONE_BRICK_SLAB = new GammaSlabBlock(NAMESPACE.id("stone_brick_slab"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("stone_brick_slab"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(2.0f)
+                .setResistance(10.0f);
     }
 }
