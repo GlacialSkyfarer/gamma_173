@@ -3,9 +3,9 @@
   "parent": "gamma173:block/slab_top",
   "textures": {
 
-    "top": "block/sandstone_top",
-    "bottom": "block/sandstone_bottom",
-    "side": "block/sandstone"
+    "top": "gamma173:block/carved_sandstone",
+    "bottom": "gamma173:block/carved_sandstone",
+    "side": "gamma173:block/sandstone_slab_side"
 
   }
 

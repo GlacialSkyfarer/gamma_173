@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "gamma173:wool"
+    },
+    {
+      "item": "gamma173:lapis_lazuli"
+    }
+  ],
+  "result": {
+    "item": "gamma173:blue_wool",
+    "count": 1
+  }
+}

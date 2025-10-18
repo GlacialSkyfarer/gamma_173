@@ -26,7 +26,7 @@ public class AnvilScreenHandler extends ScreenHandler {
     @Override
     public void onClosed(PlayerEntity player) {
         if (anvil.getStack(0) != null) player.dropItem(anvil.getStack(0));
-        if (anvil.getStack(0) != null) player.dropItem(anvil.getStack(1));
+        if (anvil.getStack(1) != null) player.dropItem(anvil.getStack(1));
         anvil.clearStacks();
         super.onClosed(player);
     }

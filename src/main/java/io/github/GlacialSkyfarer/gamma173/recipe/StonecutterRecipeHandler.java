@@ -39,6 +39,9 @@ public abstract class StonecutterRecipeHandler {
                 new ItemStack(Blocks.STONE_SLAB, 2)
             }
         ));
+        register(new StonecutterRecipe(Blocks.CARVED_STONE.asItem(), new ItemStack[] {
+                new ItemStack(Blocks.STONE_SLAB, 2)
+        }));
         register(new StonecutterRecipe(Block.COBBLESTONE.asItem(), new ItemStack[]{
                 new ItemStack(Blocks.COBBLESTONE_SLAB, 2),
                 new ItemStack(Block.COBBLESTONE_STAIRS)
@@ -47,7 +50,13 @@ public abstract class StonecutterRecipeHandler {
                 new ItemStack(Blocks.BRICK_SLAB, 2)
         }));
         register(new StonecutterRecipe(Block.SANDSTONE.asItem(), new ItemStack[]{
+                new ItemStack(Blocks.SANDSTONE_BRICKS),
+                new ItemStack(Blocks.CARVED_SANDSTONE),
+                new ItemStack(Blocks.CHISELED_SANDSTONE),
                 new ItemStack(Blocks.SANDSTONE_SLAB, 2)
+        }));
+        register(new StonecutterRecipe(Blocks.SANDSTONE_BRICKS.asItem(), new ItemStack[]{
+                new ItemStack(Blocks.SANDSTONE_BRICK_SLAB, 2)
         }));
         register(new StonecutterRecipe(Blocks.STONE_BRICKS.asItem(), new ItemStack[]{
                 new ItemStack(Blocks.STONE_BRICK_SLAB, 2)

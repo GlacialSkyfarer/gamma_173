@@ -31,11 +31,18 @@ public class Blocks {
             STONE_BRICKS,
             CHISELED_STONE,
             CARVED_STONE,
-            STONE_BRICK_SLAB;
+            STONE_BRICK_SLAB,
+            WHITE_WOOL, BLACK_WOOL, GRAY_WOOL, LIGHT_GRAY_WOOL, BROWN_WOOL,
+            RED_WOOL, ORANGE_WOOL, YELLOW_WOOL, LIME_WOOL, GREEN_WOOL,
+            CYAN_WOOL, LIGHT_BLUE_WOOL, BLUE_WOOL, PURPLE_WOOL, MAGENTA_WOOL, PINK_WOOL,
+            SANDSTONE_BRICKS,
+            CHISELED_SANDSTONE,
+            CARVED_SANDSTONE,
+            SANDSTONE_BRICK_SLAB;
 
     public static void registerBlocks(BlockRegistryEvent event) {
 
-        //Vanilla replacements
+        //region vanilla replacements
         OAK_LOG = new TemplateBlock(NAMESPACE.id("oak_log"), Material.WOOD)
                 .setTranslationKey(NAMESPACE.id("oak_log"))
                 .setSoundGroup(Block.WOOD_SOUND_GROUP)
@@ -73,6 +80,7 @@ public class Blocks {
                 .setTranslationKey(NAMESPACE.id("sandstone_slab"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
                 .setHardness(0.8f);
+        //endregion
         //Gamma
         COPPER_BLOCK = new TemplateBlock(NAMESPACE.id("copper_block"), Material.METAL)
                 .setTranslationKey(NAMESPACE.id("copper_block"))
@@ -117,7 +125,7 @@ public class Blocks {
         STONE_BRICKS = new TemplateBlock(NAMESPACE.id("stone_bricks"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("stone_bricks"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
-                .setHardness(2.0f)
+                .setHardness(2.4f)
                 .setResistance(10.0f);
         CHISELED_STONE = new TemplateBlock(NAMESPACE.id("chiseled_stone"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("chiseled_stone"))
@@ -132,7 +140,89 @@ public class Blocks {
         STONE_BRICK_SLAB = new GammaSlabBlock(NAMESPACE.id("stone_brick_slab"), Material.STONE)
                 .setTranslationKey(NAMESPACE.id("stone_brick_slab"))
                 .setSoundGroup(Block.STONE_SOUND_GROUP)
-                .setHardness(2.0f)
+                .setHardness(2.4f)
                 .setResistance(10.0f);
+        //region wool
+        WHITE_WOOL = new TemplateBlock(NAMESPACE.id("white_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("white_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        BLACK_WOOL = new TemplateBlock(NAMESPACE.id("black_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("black_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        GRAY_WOOL = new TemplateBlock(NAMESPACE.id("gray_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("gray_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        LIGHT_GRAY_WOOL = new TemplateBlock(NAMESPACE.id("light_gray_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("light_gray_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        BROWN_WOOL = new TemplateBlock(NAMESPACE.id("brown_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("brown_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        RED_WOOL = new TemplateBlock(NAMESPACE.id("red_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("red_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        ORANGE_WOOL = new TemplateBlock(NAMESPACE.id("orange_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("orange_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        YELLOW_WOOL = new TemplateBlock(NAMESPACE.id("yellow_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("yellow_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        LIME_WOOL = new TemplateBlock(NAMESPACE.id("lime_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("lime_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        GREEN_WOOL = new TemplateBlock(NAMESPACE.id("green_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("green_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        CYAN_WOOL = new TemplateBlock(NAMESPACE.id("cyan_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("cyan_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        LIGHT_BLUE_WOOL = new TemplateBlock(NAMESPACE.id("light_blue_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("light_blue_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        BLUE_WOOL = new TemplateBlock(NAMESPACE.id("blue_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("blue_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        PURPLE_WOOL = new TemplateBlock(NAMESPACE.id("purple_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("purple_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        MAGENTA_WOOL = new TemplateBlock(NAMESPACE.id("magenta_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("magenta_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        PINK_WOOL = new TemplateBlock(NAMESPACE.id("pink_wool"), Material.WOOL)
+                .setTranslationKey(NAMESPACE.id("pink_wool"))
+                .setSoundGroup(Block.WOOL_SOUND_GROUP)
+                .setHardness(0.8f);
+        //endregion
+        SANDSTONE_BRICKS = new TemplateBlock(NAMESPACE.id("sandstone_bricks"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("sandstone_bricks"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(1.2f);
+        CARVED_SANDSTONE = new TemplateBlock(NAMESPACE.id("carved_sandstone"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("carved_sandstone"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(0.8f);
+        CHISELED_SANDSTONE = new TemplateBlock(NAMESPACE.id("chiseled_sandstone"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("chiseled_sandstone"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(0.8f);
+        SANDSTONE_BRICK_SLAB = new GammaSlabBlock(NAMESPACE.id("sandstone_brick_slab"), Material.STONE)
+                .setTranslationKey(NAMESPACE.id("sandstone_brick_slab"))
+                .setSoundGroup(Block.STONE_SOUND_GROUP)
+                .setHardness(1.2f);
     }
 }

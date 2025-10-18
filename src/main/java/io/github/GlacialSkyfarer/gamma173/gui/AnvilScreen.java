@@ -37,4 +37,5 @@ public class AnvilScreen extends HandledScreen {
         this.drawTexture(x, y, 0, 0, this.backgroundWidth, this.backgroundHeight);
 
     }
+
 }

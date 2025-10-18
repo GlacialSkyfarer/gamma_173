@@ -15,7 +15,11 @@
     "gamma173:stone_bricks",
     "gamma173:chiseled_stone",
     "gamma173:carved_stone",
-    "gamma173:stone_brick_slab"
+    "gamma173:stone_brick_slab",
+    "gamma173:sandstone_bricks",
+    "gamma173:sandstone_brick_slab",
+    "gamma173:chiseled_sandstone",
+    "gamma173:carved_sandstone"
 
   ]
 }

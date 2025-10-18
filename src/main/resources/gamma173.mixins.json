@@ -6,6 +6,8 @@
   "mixins": [
     "ExampleMixin",
     "block.BlockMixin",
+    "entity.PlayerEntityMixin",
+    "entity.SheepEntityMixin",
     "feature.BirchTreeFeatureMixin",
     "feature.OakTreeFeatureMixin",
     "feature.PineTreeFeatureMixin",

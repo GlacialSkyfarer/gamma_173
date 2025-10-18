@@ -26,6 +26,7 @@ public class AnvilBlock extends TemplateBlockWithEntity {
     public boolean onUse(World world, int x, int y, int z, PlayerEntity player) {
         if (world.getBlockEntity(x,y,z) instanceof AnvilBlockEntity anvil) {
             GuiHelper.openGUI(player, Gamma173.NAMESPACE.id("anvil"), anvil, new AnvilScreenHandler(player, anvil));
+
             return true;
         }
 

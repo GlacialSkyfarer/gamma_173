@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "gamma173:wool"
+    },
+    {
+      "item": "gamma173:lime_dye"
+    }
+  ],
+  "result": {
+    "item": "gamma173:lime_wool",
+    "count": 1
+  }
+}

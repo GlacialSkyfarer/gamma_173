@@ -2,6 +2,6 @@
   "variants": {
     "type=bottom": { "model": "gamma173:block/sandstone_slab" },
     "type=top": { "model": "gamma173:block/sandstone_slab_top" },
-    "type=double": { "model": "gamma173:block/sandstone" }
+    "type=double": { "model": "gamma173:block/sandstone_double_slab" }
   }
 }
